@@ -1,0 +1,25 @@
+<div class="section-body">
+    <div class="filter">
+        <div class="flex" *ngFor="let category of categories">
+      <button  (click)="showCategory(category)" class="filter-btn active">{{ category.name }}</button>
+        </div>
+    </div>
+    <br>
+    <div class="flex" [class.loading]="loading">
+      <div  class="grid-item logo-design" *ngFor="let image of currentCategory.images" [class.loaded]="!loading">
+        <div class="gallery-image" (click)="gotoDetails(image.id)">
+            <img src="assets/img/{{ image }}" alt="{{ image }}">
+          <div class="img-overlay">
+            <div class="plus"></div>
+            <div class="img-description">
+              <h3>{{ currentCategory.categoryHeading }}</h3>
+              <h5>View Demo</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more-folio">
+      <a href="#" class="btn">More Folio</a>
+    </div>
+  </div>

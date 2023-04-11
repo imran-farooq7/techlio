@@ -1,0 +1,43 @@
+.section{
+    .title-about{
+        .title-desc{
+            padding-top: 15px;
+        }
+    }
+    .container{
+        margin-top: 1rem;
+        .row{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            .col-md-6{
+                width: 50%;
+                .card{
+                    .innerCard{
+                        display: flex;
+                        align-items: center;
+                        gap: 45px;
+                        padding: 31px 20px;
+                        margin-bottom: 15px;
+                        background: linear-gradient(62.42deg, rgba(255, 255, 255, 0.1) 20.61%, rgba(255, 255, 255, 0) 82.27%);
+                        backdrop-filter: blur(35px);
+                        border-radius: 14px;
+                        height: 45px;
+                        .cardheading{
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 30px;
+                            color: #0675EB;                      
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container .row .col-md-6{
+    width: 50%;
+}
