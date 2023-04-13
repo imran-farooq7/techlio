@@ -4,14 +4,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent implements OnInit {
-
   public loading = false;
-  constructor( private router : Router) { }
+  constructor(private router: Router) {}
 
- public categories = [
+  public categories = [
     {
       name: 'All',
       images: [
@@ -19,22 +18,22 @@ export class PortfolioComponent implements OnInit {
         'portfolio/port2.png',
         'portfolio/port3.png',
         'portfolio/port4.png',
-        'portfolio/port5.jpg',
-        'portfolio/port6.jpg',
-        'portfolio/port7.jpg',
-        'portfolio/port8.png',
-        'portfolio/port9.png',
+        // 'portfolio/port5.jpg',
+        // 'portfolio/port6.jpg',
+        // 'portfolio/port7.jpg',
+        // 'portfolio/port8.png',
+        // 'portfolio/port9.png',
       ],
       categoryHeading: 'All',
     },
     {
-      name: 'Web Design',
+      name: 'Dashboard',
       images: [
         'portfolio/port1.jpg',
         'portfolio/port2.png',
         'portfolio/port3.png',
       ],
-      categoryHeading: 'Web design',
+      categoryHeading: 'Dashboards',
     },
     {
       name: 'Photography',
@@ -57,9 +56,7 @@ export class PortfolioComponent implements OnInit {
   ];
   currentCategory: any = this.categories[0];
 
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   showCategory(category: any) {
     this.loading = true;
     setTimeout(() => {
@@ -67,8 +64,8 @@ export class PortfolioComponent implements OnInit {
       this.loading = false;
     }, 500);
   }
-    gotoDetails(id: number) {
-      console.warn(id)
-    this.router.navigate(['/portfolioDetails',id])
+  gotoDetails(id: number) {
+    console.warn(id);
+    this.router.navigate(['/portfolioDetails', id]);
   }
 }
