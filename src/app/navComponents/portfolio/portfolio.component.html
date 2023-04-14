@@ -18,8 +18,8 @@
       *ngFor="let image of currentCategory.images"
       [class.loaded]="!loading"
     >
-      <div class="gallery-image" (click)="gotoDetails(image.id)">
-        <img src="assets/img/{{ image }}" alt="{{ image }}" />
+      <div class="gallery-image" (click)="gotoDetails(image)">
+        <img src="assets/img/{{ image.path }}" alt="{{ image }}" />
         <div class="img-overlay">
           <div class="plus"></div>
           <div class="img-description">
