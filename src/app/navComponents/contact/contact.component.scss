@@ -1,0 +1,29 @@
+.contact {
+  margin-top: 1rem;
+
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    color: #0675eb;
+    margin-bottom: 20px;
+  }
+  .contact__container {
+    margin: 0 auto;
+    .contact__container-icons {
+      margin-top: 5rem;
+      display: flex;
+      //   justify-content: space-between;
+      gap: 15rem;
+      font-size: 14px;
+      color: #3e3b3b;
+      .contact__container-icons-container {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
