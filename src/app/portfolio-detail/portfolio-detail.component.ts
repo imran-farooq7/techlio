@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio-detail',
@@ -8,15 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PortfolioDetailComponent implements OnInit {
 
-  id: number | undefined;
-  constructor(private route: ActivatedRoute) { 
+  public id: number | undefined;
+  constructor(private route: ActivatedRoute , private location: Location) { 
   }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params=>{
-      // this.productId = val['id'];
+    this.route.params.subscribe(params => {
       this.id = +params['id'];
-    });
-  }
+    });  }
 
+    goback(){
+      this.location.back();
+    }
 }
