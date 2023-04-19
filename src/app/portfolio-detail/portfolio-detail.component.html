@@ -7,3 +7,9 @@
 
 
 
+<div class="class-images">
+    <div *ngFor="let image of detailImages">
+      <img [src]="'assets/img/' + image" [alt]="'Detail Image ' + image">
+    </div>
+  </div>
+  
