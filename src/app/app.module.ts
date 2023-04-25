@@ -13,7 +13,7 @@ import { AboutComponent } from './navComponents/about/about.component';
 import { NgProgressModule } from 'ngx-progressbar';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,16 +25,16 @@ import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.co
     PortfolioComponent,
     ContactComponent,
     AboutComponent,
-    PortfolioDetailComponent
+    PortfolioDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgProgressModule,
-    NgCircleProgressModule.forRoot()
-    
+    NgCircleProgressModule.forRoot(),
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,9 +1,58 @@
-
-
-<h2>Project Details</h2>
-
-<a (click)="goback()"  href="" >return back to portfolio</a>
-<p>Project ID: {{ id }}</p>
-
-
-
+<div class="portfolio-details">
+  <div class="portfolio-details__heading">
+    <button (click)="goback()">
+      <img src="assets/img/chevron.svg" alt="icon" />
+    </button>
+    <h1>Portfolio</h1>
+  </div>
+  <div class="portfolio-details__hero">
+    <img src="assets/img/portfolio/port5.jpg" alt="portfolio" />
+  </div>
+  <div class="portfolio-details__images">
+    <div class="portfolio-details__images--container">
+      <img
+        [src]="'assets/img/' + image.detailPathImages"
+        *ngFor="let image of detailImages"
+        alt="portfolio image"
+        (click)="onClick($event, mymodal)"
+      />
+    </div>
+  </div>
+  <!-- <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img
+            src="{{ imgSrc }}"
+            style="max-width: 100%; cursor: pointer"
+            class="modal-hover-opacity"
+          />
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+<ng-template #mymodal let-modal>
+  <div class="modal-body">
+    <img
+      src="{{ imgSrc }}"
+      style="max-width: 100%; cursor: pointer"
+      class="modal-hover-opacity"
+    />
+  </div>
+  <!-- <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('Save click')"
+    >
+      Ok
+    </button>
+  </div> -->
+</ng-template>
