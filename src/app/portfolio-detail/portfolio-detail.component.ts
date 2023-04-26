@@ -23,7 +23,6 @@ export class PortfolioDetailComponent implements OnInit {
 
   public detailImages: any;
   public id: number | undefined;
-  // modal: any;
   constructor(
     private route: ActivatedRoute,
     private location: Location,
@@ -33,11 +32,6 @@ export class PortfolioDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.id = +params['id'];
-      // const detailImages =
-      //   this.route.snapshot.queryParamMap.getAll('detailImages'); // Get the detail images array from the route parameters
-      // if (detailImages) {
-      //   this.detailImages = detailImages; // Parse the JSON string to an array if detailImages is defined and not null
-      // }
       this.detailImages = window.history.state.images;
       this.bgImage = window.history.state.bgImage;
       console.log(this.id);
