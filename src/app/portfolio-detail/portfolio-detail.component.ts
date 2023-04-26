@@ -19,6 +19,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 export class PortfolioDetailComponent implements OnInit {
   imgSrc: string | undefined;
   closeResult: string = '';
+  bgImage: string | undefined;
 
   public detailImages: any;
   public id: number | undefined;
@@ -38,8 +39,10 @@ export class PortfolioDetailComponent implements OnInit {
       //   this.detailImages = detailImages; // Parse the JSON string to an array if detailImages is defined and not null
       // }
       this.detailImages = window.history.state.images;
+      this.bgImage = window.history.state.bgImage;
       console.log(this.id);
       console.log(this.detailImages);
+      console.log(this.bgImage);
     });
   }
   onClick(event: any, content: any) {

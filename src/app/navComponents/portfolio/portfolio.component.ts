@@ -159,13 +159,18 @@ export class PortfolioComponent implements OnInit {
   }
   gotoDetails(image: any) {
     const id = image.id;
-    const detailImages = image.detailImages; // Get the detail images array
-    console.log(image);
-    console.warn(id);
-    console.log(detailImages);
+    const detailImages = image.detailImages;
+    const bgImage = image.path;
+
+    // Get the detail images array
+    // console.log(image);
+    // console.warn(id);
+    // console.log(detailImages);
+    // console.log(bgImage);
     this.router.navigate(['portfolioDetails', id], {
       state: {
         images: detailImages,
+        bgImage,
       },
     }); // Pass the detail images array along with the id parameter
   }
