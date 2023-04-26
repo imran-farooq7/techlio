@@ -16,94 +16,124 @@ export class PortfolioComponent implements OnInit {
       images: [
         {
           id: 1,
-          path: 'portfolio/port1.jpg',
+          path: 'portfolio/portfolio-1.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
             { detailPathImages: 'portfolio/port2.png' },
           ],
         },
         {
           id: 2,
-          path: 'portfolio/port2.png',
+          path: 'portfolio/portfolio-2.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 3,
-          path: 'portfolio/port3.png',
+          path: 'portfolio/portfolio-3.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 4,
-          path: 'portfolio/port4.png',
+          path: 'portfolio/portfolio-3.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 5,
-          path: 'portfolio/port5.jpg',
+          path: 'portfolio/portfolio-1.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 6,
-          path: 'portfolio/port6.jpg',
+          path: 'portfolio/portfolio-2.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 7,
-          path: 'portfolio/port7.jpg',
+          path: 'portfolio/portfolio-3.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 8,
-          path: 'portfolio/port8.png',
+          path: 'portfolio/portfolio-3.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
         {
           id: 9,
-          path: 'portfolio/port9.png',
+          path: 'portfolio/portfolio-1.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 10,
+          path: 'portfolio/portfolio-2.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 11,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 12,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
           ],
         },
       ],
@@ -112,9 +142,9 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Web Design',
       images: [
-        { id: 10, path: 'portfolio/port1.jpg' },
-        { id: 11, path: 'portfolio/port2.png' },
-        { id: 12, path: 'portfolio/port3.png' },
+        { id: 13, path: 'portfolio/port1.jpg' },
+        { id: 14, path: 'portfolio/portfolio-2.png' },
+        { id: 15, path: 'portfolio/port3.png' },
       ],
       categoryHeading: 'Web design',
     },
@@ -122,26 +152,26 @@ export class PortfolioComponent implements OnInit {
       name: 'Photography',
       images: [
         {
-          id: 13,
+          id: 16,
           path: 'portfolio/port4.png',
           detailImages: [
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
-            { detailPathImages: 'portfolio/port2.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
           ],
         },
-        { id: 14, path: 'portfolio/port5.jpg' },
-        { id: 15, path: 'portfolio/port6.jpg' },
+        { id: 17, path: '' },
+        { id: 18, path: '' },
       ],
       categoryHeading: 'Photography',
     },
     {
       name: 'Graphic Designing',
       images: [
-        { id: 16, path: 'portfolio/port7.jpg' },
-        { id: 17, path: 'portfolio/port8.png' },
-        { id: 18, path: 'portfolio/port9.png' },
+        { id: 19, path: '' },
+        { id: 20, path: '' },
+        { id: 21, path: '' },
       ],
       categoryHeading: 'Graphic Designing',
     },
@@ -161,17 +191,11 @@ export class PortfolioComponent implements OnInit {
     const id = image.id;
     const detailImages = image.detailImages;
     const bgImage = image.path;
-
-    // Get the detail images array
-    // console.log(image);
-    // console.warn(id);
-    // console.log(detailImages);
-    // console.log(bgImage);
     this.router.navigate(['portfolioDetails', id], {
       state: {
         images: detailImages,
         bgImage,
       },
-    }); // Pass the detail images array along with the id parameter
+    });
   }
 }
