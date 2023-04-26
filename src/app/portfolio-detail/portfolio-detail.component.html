@@ -12,13 +12,12 @@
     <img src="assets/img/bannerImage.jpg" alt="" srcset="">
   </div>
   <div class="portfolio-details__images">
-    <div class="portfolio-details__images--container">
-      <img
-        [src]="'assets/img/' + image.detailPathImages"
-        *ngFor="let image of detailImages"
-        alt="portfolio image"
-        (click)="onClick($event, mymodal)"
-      />
+    <div class="portfolio-details-images-container">
+      <div class="portfolio-details-images-wrapper">
+        <div class="portfolio-detail-image"  *ngFor="let image of detailImages" (click)="onClick($event, mymodal)">
+          <img [src]="'assets/img/' + image.detailPathImages" alt=""/>
+        </div>
+      </div>
     </div>
   </div>
 </div>
