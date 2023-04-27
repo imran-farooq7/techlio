@@ -3,6 +3,28 @@
   backdrop-filter: blur(20px);
   border-radius: 14px;
   padding: 15px 15px;
+  height: calc(100vh - 400px);
+  overflow-y: scroll;
+  &.overflow::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+
+  &.overflow::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &.overflow::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+  }
+
+  &.overflow:hover::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+  }
+
+  &.overflow::-webkit-scrollbar-thumb:hover {
+    background: #c7c7c7;
+  }
   .con {
     .row-1 {
       display: flex;
@@ -27,7 +49,7 @@
     }
     .row-2 {
       border-bottom: 0.5px solid #b7b7b7;
-      padding: 20px 10px;
+      padding: 20px 0px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -202,4 +224,18 @@
       }
     }
   }
+}
+
+
+@media (max-width: 1720px){
+.con{
+  .row-2{
+  padding: 10px 0px;
+  margin-left: -9px;
+  .row-01{
+    flex-wrap: initial !important;
+    gap: 7px;
+  }
+  }
+}
 }

@@ -1,14 +1,7 @@
 @import "bootstrap/scss/bootstrap";
 .portfolio-details {
   margin-top: 1rem;
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 31px;
-    color: #0675eb;
-    // margin-bottom: 20px;/
-  }
-  .portfolio-details__heading {
+  .portfolio-details-heading {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -24,22 +17,34 @@
       justify-content: center;
       cursor: pointer;
     }
+    h1{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 31px;
+      color: #0675eb;
+    }
   }
-  .portfolio-details__hero {
+  .portfolio-details-hero {
     margin: 0 -32px;
     img {
       height: 333px;
       width: 100%;
     }
   }
-  .portfolio-details-images-container {
+  .portfolio-details-images-wrapper {
     margin-top: 25px;
     display: flex;
-    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 10px;
-    img {
+    justify-content: space-between;
+    .portfolio-detail-image {
+      flex-basis: 31%;
       height: 181px;
+      cursor: pointer;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

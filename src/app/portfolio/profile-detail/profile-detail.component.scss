@@ -1,5 +1,5 @@
 .user-profile-detail {
-  height: 100%;
+  height: calc(100vh - 100px);
   background: linear-gradient(
     341.72deg,
     rgba(255, 255, 255, 0.5) 7.28%,
@@ -8,7 +8,7 @@
   box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 14px;
-  overflow-x: auto;
+  overflow-y: scroll;
   &.overflow::-webkit-scrollbar {
     width: 8px;
     height: 10px;
