@@ -43,3 +43,17 @@
     }
   }
 }
+.custom-modal {
+  .modal-dialog {
+    width: fit-content;
+    // background: linear-gradient(109.64deg, #1d1a1f -0.28%, #2f3f4b 100%);
+  }
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+}
+.custom-backdrop.show {
+  background: linear-gradient(109.64deg, #1d1a1f -0.28%, #2f3f4b 100%);
+  opacity: 1;
+}

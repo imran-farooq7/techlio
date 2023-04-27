@@ -44,7 +44,8 @@ export class PortfolioDetailComponent implements OnInit {
       .open(content, {
         // fullscreen: true,
         centered: true,
-        windowClass: 'dark-modal',
+        windowClass: 'custom-modal',
+        backdropClass: 'custom-backdrop',
         // size: 'xl',
       })
       .result.then(
