@@ -14,6 +14,7 @@ import { NgProgressModule } from 'ngx-progressbar';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MainViewComponent } from './main-view/main-view.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     AboutComponent,
     PortfolioDetailComponent,
+    MainViewComponent,
   ],
   imports: [
     BrowserModule,
