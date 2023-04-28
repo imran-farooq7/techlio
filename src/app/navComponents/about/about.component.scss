@@ -115,7 +115,7 @@
           }
           .user-profile-list-skills-whole-wrapper {
             .user-profile-skills-progressbar-wrapper {
-              margin: 10px;
+              margin: 10px 0px;
               .profile-skills-lists {
                 display: flex;
                 justify-content: space-between;
@@ -226,4 +226,16 @@
             }
         }
     }
+}
+
+
+@media (max-width:700px){
+  .about-container{
+    .about-row{
+      display: block !important;
+      .about-columns{
+        width: 100% !important;
+      }
+    }
+  }
 }
