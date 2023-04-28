@@ -25,19 +25,20 @@ h6 {
   font-weight: 700;
   line-height: 51px;
 }
-/* Importing Bootstrap SCSS file. */
 
 
 @media (max-width: 700px){
   #porfolio-section-wrapper{
     display: block;
     width: 90% !important;
+    padding-bottom: 0;
   }
   #porfolio-section-list{
     width: 100% !important;
   }
   #porfolio-section-detail{
     width: 100% !important;
+    height: calc(100vh - 260px);
   }
   .user-profile{
     height: auto !important;
@@ -61,11 +62,5 @@ h6 {
   }
   .user-profile-detail-navbar{
     display: none;
-  }
-}
-
-@media (max-width: 477px){
-  .section-p1{
-      padding: 40px 40px;
   }
 }

@@ -64,3 +64,9 @@
     }
   }
 }
+
+@media (max-width:700px){
+  .user-profile-detail{
+    height: calc(100vh - 275px);
+  }
+}
