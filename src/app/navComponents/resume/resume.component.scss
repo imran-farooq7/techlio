@@ -9,7 +9,7 @@
 	}
 	.exp {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		align-items: center;
 		gap: 20px;
 		margin-bottom: 20px;
@@ -46,7 +46,8 @@
 			.list-item {
 				font-style: normal;
 				font-weight: 600;
-				font-size: 17px;
+				font-size: 15px;
+				margin-left: -5px;
 				line-height: 26px;
 				color: #0675eb;
 				svg {
@@ -71,6 +72,7 @@
 				}
 			}
 			ul {
+				padding: 0;
 				li {
 					list-style: disc;
 					font-family: 'Poppins';
@@ -91,7 +93,7 @@
 			h3 {
 				font-style: normal;
 				font-weight: 900;
-				font-size: 15px;
+				font-size: 13px;
 				line-height: 22px;
 				color: #3e3b3b;
 			}
