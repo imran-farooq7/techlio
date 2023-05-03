@@ -20,6 +20,7 @@ export class PortfolioDetailComponent implements OnInit {
   imgSrc: string | undefined;
   closeResult: string = '';
   bgImage: string | undefined;
+
   public detailImages: any;
   public id: number | undefined;
   constructor(
