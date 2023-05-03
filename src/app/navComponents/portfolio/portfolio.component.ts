@@ -8,36 +8,150 @@ import { Router } from '@angular/router';
 })
 export class PortfolioComponent implements OnInit {
   public loading = false;
-  constructor( private router : Router) { }
+  constructor(private router: Router) {}
 
   public categories = [
     {
       name: 'All',
       images: [
-        { id: 1, path: 'portfolio/port1.jpg' },
-        { id: 2, path: 'portfolio/port2.png' },
-        { id: 3, path: 'portfolio/port3.png' },
-        { id: 4, path: 'portfolio/port4.png' },
-        { id: 5, path: 'portfolio/port5.jpg' },
-        { id: 6, path: 'portfolio/port6.jpg' },
-        { id: 7, path: 'portfolio/port7.jpg' },
-        { id: 8, path: 'portfolio/port8.png' },
-        { id: 9, path: 'portfolio/port9.png' },
+        {
+          id: 1,
+          path: 'portfolio/portfolio-1.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/port2.png' },
+          ],
+        },
+        {
+          id: 2,
+          path: 'portfolio/portfolio-2.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 3,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 4,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 5,
+          path: 'portfolio/portfolio-1.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 6,
+          path: 'portfolio/portfolio-2.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 7,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 8,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 9,
+          path: 'portfolio/portfolio-1.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 10,
+          path: 'portfolio/portfolio-2.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 11,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
+        {
+          id: 12,
+          path: 'portfolio/portfolio-3.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+            { detailPathImages: 'portfolio/portfolio-2.png' },
+          ],
+        },
       ],
       categoryHeading: 'All',
     },
     {
       name: 'Web Design',
       images: [
-        { id: 10, path: 'portfolio/port1.jpg' },
-        { id: 11, path: 'portfolio/port2.png' },
-        { id: 12, path: 'portfolio/port3.png' },
+        { id: 13, path: 'portfolio/port1.jpg' },
+        { id: 14, path: 'portfolio/portfolio-2.png' },
+        { id: 15, path: 'portfolio/port3.png' },
       ],
       categoryHeading: 'Web design',
     },
     {
       name: 'Photography',
       images: [
+<<<<<<< HEAD
         { id: 13, path: 'portfolio/port4.png',
         detailImages:[
           {detailPathImages:'portfolio/port2.png'},
@@ -48,25 +162,37 @@ export class PortfolioComponent implements OnInit {
       },
         { id: 14, path: 'portfolio/port5.jpg' },
         { id: 15, path: 'portfolio/port6.jpg' },
+=======
+        {
+          id: 16,
+          path: 'portfolio/port4.png',
+          detailImages: [
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+            { detailPathImages: 'portfolio/port3.png' },
+          ],
+        },
+        { id: 17, path: '' },
+        { id: 18, path: '' },
+>>>>>>> test-branch
       ],
       categoryHeading: 'Photography',
     },
     {
       name: 'Graphic Designing',
       images: [
-        { id: 16, path: 'portfolio/port7.jpg' },
-        { id: 17, path: 'portfolio/port8.png' },
-        { id: 18, path: 'portfolio/port9.png' },
+        { id: 19, path: '' },
+        { id: 20, path: '' },
+        { id: 21, path: '' },
       ],
       categoryHeading: 'Graphic Designing',
     },
   ];
-  
+
   currentCategory: any = this.categories[0];
-  
-  
-  ngOnInit(): void {
-  }
+
+  ngOnInit(): void {}
   showCategory(category: any) {
     this.loading = true;
     setTimeout(() => {
@@ -76,6 +202,7 @@ export class PortfolioComponent implements OnInit {
   }
   gotoDetails(image: any) {
     const id = image.id;
+<<<<<<< HEAD
     const detailImages = image.detailImages; // Get the detail images array
     console.warn(id);
     console.log(detailImages);
@@ -84,4 +211,15 @@ export class PortfolioComponent implements OnInit {
   
   
   
+=======
+    const detailImages = image.detailImages;
+    const bgImage = image.path;
+    this.router.navigate(['portfolioDetails', id], {
+      state: {
+        images: detailImages,
+        bgImage,
+      },
+    });
+  }
+>>>>>>> test-branch
 }

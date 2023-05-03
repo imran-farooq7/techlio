@@ -1,5 +1,5 @@
 .user-profile-detail {
-  height: 100%;
+  height: calc(100vh - 100px);
   background: linear-gradient(
     341.72deg,
     rgba(255, 255, 255, 0.5) 7.28%,
@@ -8,7 +8,7 @@
   box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 14px;
-  overflow-x: auto;
+  overflow-y: scroll;
   &.overflow::-webkit-scrollbar {
     width: 8px;
     height: 10px;
@@ -30,9 +30,9 @@
     background: #c7c7c7;
   }
 
-  .page {
+  .user-profile-detail-page {
     padding: 10px 32px 40px 32px;
-    .navbar {
+    .user-profile-detail-navbar {
       position: absolute;
       right: 0;
       top: 0;
@@ -41,7 +41,7 @@
       background: rgba(23, 134, 238, 0.5);
       box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
       border-radius: 0px 14px;
-      .nav-links {
+      .user-profile-detail-nav-links {
         display: flex;
         gap: 22px;
         list-style: none;
@@ -62,5 +62,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width:700px){
+  .user-profile-detail{
+    height: calc(100vh - 275px);
   }
 }
