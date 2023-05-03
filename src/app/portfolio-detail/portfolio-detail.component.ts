@@ -20,12 +20,7 @@ export class PortfolioDetailComponent implements OnInit {
   imgSrc: string | undefined;
   closeResult: string = '';
   bgImage: string | undefined;
-
-<<<<<<< HEAD
-  public detailImages: string | undefined;
-=======
   public detailImages: any;
->>>>>>> test-branch
   public id: number | undefined;
   constructor(
     private route: ActivatedRoute,
@@ -36,20 +31,6 @@ export class PortfolioDetailComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.id = +params['id'];
-<<<<<<< HEAD
-      const detailImages = this.route.snapshot.paramMap.get('detailImages'); // Get the detail images array from the route parameters
-      if (detailImages) {
-        this.detailImages = detailImages; // Parse the JSON string to an array if detailImages is defined and not null
-      }
-    console.log(this.id);
-    console.log(this.detailImages);
-
-    });  
-  }
-
-    goback(){
-      this.location.back();
-=======
       this.detailImages = window.history.state.images;
       this.bgImage = window.history.state.bgImage;
       console.log(this.id);
@@ -87,7 +68,6 @@ export class PortfolioDetailComponent implements OnInit {
       return 'by clicking on a backdrop';
     } else {
       return `with: ${reason}`;
->>>>>>> test-branch
     }
   }
 

@@ -151,18 +151,6 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Photography',
       images: [
-<<<<<<< HEAD
-        { id: 13, path: 'portfolio/port4.png',
-        detailImages:[
-          {detailPathImages:'portfolio/port2.png'},
-          {detailPathImages:'portfolio/port2.png'},
-          {detailPathImages:'portfolio/port2.png'},
-          {detailPathImages:'portfolio/port2.png'},
-        ]
-      },
-        { id: 14, path: 'portfolio/port5.jpg' },
-        { id: 15, path: 'portfolio/port6.jpg' },
-=======
         {
           id: 16,
           path: 'portfolio/port4.png',
@@ -175,7 +163,6 @@ export class PortfolioComponent implements OnInit {
         },
         { id: 17, path: '' },
         { id: 18, path: '' },
->>>>>>> test-branch
       ],
       categoryHeading: 'Photography',
     },
@@ -202,16 +189,6 @@ export class PortfolioComponent implements OnInit {
   }
   gotoDetails(image: any) {
     const id = image.id;
-<<<<<<< HEAD
-    const detailImages = image.detailImages; // Get the detail images array
-    console.warn(id);
-    console.log(detailImages);
-    this.router.navigate(['portfolioDetails', id, { detailImages }]); // Pass the detail images array along with the id parameter
-  }
-  
-  
-  
-=======
     const detailImages = image.detailImages;
     const bgImage = image.path;
     this.router.navigate(['portfolioDetails', id], {
@@ -221,5 +198,4 @@ export class PortfolioComponent implements OnInit {
       },
     });
   }
->>>>>>> test-branch
 }
