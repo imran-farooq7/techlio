@@ -1,4 +1,4 @@
-@import "bootstrap/scss/bootstrap";
+// @import "bootstrap/scss/bootstrap";
 .portfolio-details {
   margin-top: 1rem;
   .portfolio-details-heading {
@@ -49,9 +49,17 @@
   }
 }
 .custom-modal {
+  position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: linear-gradient(109.64deg, #1d1a1f -0.28%, #2f3f4b 100%);
   .modal-dialog {
     width: fit-content;
-    // background: linear-gradient(109.64deg, #1d1a1f -0.28%, #2f3f4b 100%);
   }
   .modal-content {
     background-color: transparent;
