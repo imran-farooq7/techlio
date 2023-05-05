@@ -5,7 +5,11 @@
   padding: 15px 15px;
   height: calc(100vh - 400px);
   overflow-y: scroll;
-  background: linear-gradient(341.72deg, rgba(255, 255, 255, 0.5) 7.28%, rgba(255, 255, 255, 0.18) 96.36%);
+  background: linear-gradient(
+    341.72deg,
+    rgba(255, 255, 255, 0.5) 7.28%,
+    rgba(255, 255, 255, 0.18) 96.36%
+  );
   &.overflow::-webkit-scrollbar {
     width: 8px;
     height: 10px;
@@ -136,7 +140,6 @@
           }
         }
       }
-
     }
     .user-profile-list-skills-whole-wrapper {
       .user-profile-skills-progressbar-wrapper {
@@ -166,7 +169,7 @@
           border-radius: 0px !important;
           margin-bottom: 13px !important;
           .progress-bar {
-            background-color: #0675eb !important;
+            background-color: #0675eb;
             height: 100%;
           }
         }

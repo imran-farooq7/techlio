@@ -69,3 +69,42 @@ h6 {
     display: none;
   }
 }
+.user-profile-list-info-left,
+.user-profile-list-info-right {
+  color: #800000 !important;
+}
+.progress-bar {
+  background-color: #800000 !important;
+}
+.about-inner-card {
+  background: linear-gradient(
+    62.42deg,
+    rgba(255, 255, 255, 0.1) 20.61%,
+    rgba(255, 255, 255, 0) 82.27%
+  );
+  filter: drop-shadow(2px 4px 30px rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(35px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 14px;
+}
+p.title-desc {
+  color: #3e3b3b;
+}
+.user-profile-detail-navbar {
+  background: rgba(255, 230, 230, 1) !important;
+}
+a {
+  color: #727070 !important;
+}
+a.active {
+  color: #800000 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #800000 !important;
+}
